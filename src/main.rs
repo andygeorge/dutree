@@ -41,11 +41,14 @@ use dutree::XResult::XErr;
 use dutree::XResult::XOk;
 use dutree::XResult::XExit;
 use std::process;
+use std::sync::Arc;
+use std::sync::atomic::{AtomicBool};
 
 fn main() {
 
     // handle SIGPIPE
-    let _signal = unsafe { signal_hook::register(signal_hook::SIGPIPE, || process::exit(0)) };
+    let term = Arc::new(AtomicBool::new(false));
+    let _signal = signal_hook::flag::register(signal_hook::consts::SIGPIPE, Arc::clone(&term));
 
     // Parse arguments
     let cfg = match Config::new() {

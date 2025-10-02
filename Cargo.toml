@@ -1,19 +1,19 @@
 [package]
 name = "dutree"
-version = "0.2.18"
-authors = ["nacho <nacho@ownyourbits.com>"]
+version = "0.3.0"
+authors = ["nacho <nacho@ownyourbits.com>", "Andy George"]
 description = "Command line tool to analyze disk usage"
-repository = "https://github.com/nachoparker/dutree"
+repository = "https://github.com/andygeorge/dutree"
 categories = ["command-line-utilities"]
 license = "GPL-3.0"
-homepage = "https://ownyourbits.com/2018/03/25/analize-disk-usage-with-dutree/"
+homepage = "https://github.com/andygeorge/dutree"
 exclude = ["test/*"]
-edition = "2018"
+edition = "2024"
 
 [dependencies]
-getopts = "0.2.21"
-regex = "1.3.9"
-signal-hook = "0.1.10"
-terminal_size = "0.1.8"
-unicode-width = "0.1.1"
-unicode-segmentation = "1.2.0"
+getopts = "0.2.24"
+regex = "1.11.3"
+signal-hook = "0.3.18"
+terminal_size = "0.4.3"
+unicode-width = "0.2.1"
+unicode-segmentation = "1.12.0"
