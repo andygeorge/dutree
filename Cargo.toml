@@ -3,10 +3,10 @@ name = "dutree"
 version = "0.3.0"
 authors = ["nacho <nacho@ownyourbits.com>", "Andy George"]
 description = "Command line tool to analyze disk usage"
-repository = "https://github.com/andygeorge/dutree"
+repository = "https://github.com/nachoparker/dutree"
 categories = ["command-line-utilities"]
 license = "GPL-3.0"
-homepage = "https://github.com/andygeorge/dutree"
+homepage = "https://github.com/nachoparker/dutree"
 exclude = ["test/*"]
 edition = "2024"
 
