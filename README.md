@@ -37,8 +37,10 @@ Options:
 # Installation
 
 ```
-cargo install dutree
+cargo install --git https://github.com/andygeorge/dutree --tag v0.3.0
 ```
+
+## Pre-0.3 Instructions
 
 There's also standalone binaries for Linux in the [Releases section](https://github.com/nachoparker/dutree/releases)
 
